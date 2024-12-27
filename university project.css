@@ -2,15 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family :system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
 body {
     height: 100vh;
     background-color: #000;
     background-image: url("https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=mnwxmja3fdb8mhxwag90by1wywd1fhx8fgvufdb8fgx8&auto=format&fit=crop&w=1517&q=80");
     background-size: cover;
-    background-repeat:no-repeat;
+    background-position: center;
 }
 
 li {
@@ -51,33 +50,96 @@ justify-content: space-between;
 .navbar .links {
     display: flex;
     gap: 5rem;
-    font-weight: bold;
 }
 
 .navbar .toggle_btn {
     color: #fff;
     font-size: 1.5rem;
     cursor: pointer;
-    display: none;
+    display:none;
 }
-
-.action-btn {
+.action-btn{
     background-color: orange;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border: none;
-    outline: none;
-    border-radius: 20px;
-    font-size: 0.8rem;
+    color :#fff;
+    padding :0.5rem 1rem;
+    border:none;
+    outline:none;
+    border-radius:20px;
+    font-size:0.8rem;
     font-weight: bold;
+    cursor:pointer;
+    transition: scale 0.2 ease;
     -webkit-box-reflect: below 1px linear-gradient(transparent,#0008);
 }
-
-.action-btn:hover {
-    scale: 1.05;
-    color: #fff;
+.action-btn:hover{
+    scale:1.06;
+    color:#fff;
 }
-section#hero{
+.action-btn:active {
+    scale :0.95;
+}
+
+/* DROPDOWN MENU */
+
+.dropdown_menu {
+    display:none;
+    position: absolute;
+    right: 2rem;
+    top:60px;
+    height: 0;
+    width :300px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    border-radius :10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 1;
+}
+.dropdown_menu.open{
+    height: 240px;
+    z-index: 1;
+}
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    z-index: 1;
+}
+
+.dropdown_menu .action-btn{
+    width :100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width:992px){
+    .navbar .links,
+    .navbar .action-btn{
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+    .dropdown_menu{
+        display: block;
+    }
+}
+
+@media (max-width:576px){
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
+}
+
+
+
+ section#hero{
     height:calc(100vh-60px);
     display :flex;
     flex-direction:column;
@@ -87,25 +149,33 @@ section#hero{
 
 }
 #hero h1 {
-    text-shadow: 4px 6px 4px rgb(9,154,109,1);
-    font-size : 3rem;
+    text-shadow :
+     0 0 10px rgb(28, 185, 135), 
+     0 0 20px rgb(28, 185, 135),
+     0 0 40px rgb(28, 185, 135),
+     0 0 80px rgb(28, 185, 135),
+     0 0 160px rgb(28, 185, 135);
+    font-size : 2rem;
     margin-top : 6rem;
     font-family: "pacifico";
 
 }
 #hero p{
-    font-size:20px;
+    font-size:15px;
     font-family: "Playwrite GB S", cursive;
+    text-shadow: 6px 6px 6px rgb(28, 185, 135);
 }
 section#search{
     height:calac(100vh-120px);
-    width: 50vw;
+    width: 30vw;
     display:flex;
     position :relative;
-    left :25vw;
+    left :35vw;
 }
 .search{
+    z-index: 99;
     width:35vw;
+    outline:none;
     border:none;
     border-radius:30px;
     height:40px;
@@ -114,7 +184,12 @@ section#search{
     background-color:rgba(255,255,255, 0.4);
     margin :20px auto;
 }
+.search:focus{
+    color:whitesmoke;
+    border: 2px solid orange;
+}
 .buttun{
+    z-index: 0;
     width:6rem;
     height:40px;
     border :none;
@@ -125,6 +200,13 @@ section#search{
     background-color:orange;
     cursor:pointer;
     box-shadow: 3px 4px 3px black;
+    outline: none;
+}
+.buttun:hover{
+    scale: 1.05;
+}
+.buttun:active{
+    scale: 0.95;
 }
 footer p{
     color:#fff;
