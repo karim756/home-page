@@ -217,4 +217,91 @@ footer p{
     position:relative;
     top:300px;
 }
+                    
+/* LOGIN */
+
+.container-login{
+    width:26vw;
+    height: 40vw;
+    margin:6vw;
+    border :2px solid rgb(244, 234, 234);
+    border-bottom-left-radius:  100px;
+    border-top-right-radius:  100px;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+}
+.login-title{
+    padding: 2vw;
+    margin: 2vw;
+    text-align: center;
+    color:orange;
+    font-size: 3.5vw;
+
+}
+
+.container-login .input{
+    border-bottom:2px solid rgb(252, 252, 252);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
+    background-color :transparent;
+    width: 22vw;
+    padding: 0.7vw;
+    display: flex;
+    margin: 2vw auto;
+    color:rgb(255, 255, 255);
+}
+.button-login{
+    width: 22vw;
+    height: 3vw;
+    margin: 2vw;
+    outline:none;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    background-color: orange;
+}
+.button-login:hover{
+    scale: 1.05;
+    box-shadow :
+    0 0 10px rgb(28, 185, 135), 
+    0 0 20px rgb(28, 185, 135),
+    0 0 40px rgb(28, 185, 135),
+    0 0 80px rgb(28, 185, 135),
+    0 0 160px rgb(28, 185, 135);
+}
+.button-login:active{
+    scale: 0.95;
+}
+                   /* POAM */
+
+.poam{
+    width: 45vw;
+    height: 22vw;
+    padding: 3vw ;
+    font-size: 1.9vw;
+    color: white;
+    border:2px solid rgb(248, 247, 247);
+    border-radius: 40px;
+    backdrop-filter:blur(10px);
+    position: absolute;
+    right: 4vw;
+    top:20vw;
+} 
+.poam:hover{
+    box-shadow :
+    0 0 10px rgb(28, 185, 135), 
+    0 0 20px rgb(28, 185, 135),
+    0 0 40px rgb(28, 185, 135),
+    0 0 80px rgb(28, 185, 135),
+    0 0 160px rgb(28, 185, 135);
+}
+.poam p{
+    font-family: "Playwrite GB S", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color:rgb(0, 0, 0);
+  text-shadow: 1px 1px 6px wheat;
+}
 
