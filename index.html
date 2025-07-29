@@ -1,75 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="university project.css">
-    <!-- font awsome libaray -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="website icon" href="image-removebg-preview.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+   <link rel="website icon" href="../../coding/image/AWA-PNG-1-e1638974616381.png">
+                     <!-- Google foont famliy -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"
         rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <title>smart library</title>
+                     <!-- font awsome libaray -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+  integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+   crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>AWA Food Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <header>
-        <div class="navbar">
-            <div class="logo"><a href="#">Web dev creative</a></div>
-            <ul class="links">
-                <li><a href="index.html" target="_blank"><i class="fa-solid fa-house"></i> Home</a></li>
-                <li><a href="about"><i class="fa-solid fa-address-card"></i> About</a></li>
-                <li><a href="contact"><i class="fa-solid fa-address-book"></i> Contact</a></li>
-                <li><a href="login.html"><i class="fa-solid fa-user"></i> login</a></li>
-                <li><a href="#"> <i class="fa-solid fa-right-to-bracket"></i> sing in</a></li>
-            </ul>
-            <a href="#" class="action-btn">Get start</a>
-            <div class="toggle_btn">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </div>
-        <div class="dropdown_menu ">
-            <li><a href="index.html" target="_blank"><i class="fa-solid fa-house"></i> Home</a></li>
-            <li><a href="about"><i class="fa-solid fa-address-card"></i> About</a></li>
-            <li><a href="Contact"><i class="fa-solid fa-address-book"></i> contact</a></li>
-            <li><a href="login.html"><i class="fa-solid fa-user"></i> login</a></li>
-            <li><a href="#"> <i class="fa-solid fa-right-to-bracket"></i> sing in</a></li>
-            <li><a href="#" class="action-btn">Get start</a></li>
-        </div>
-    </header>
-
-    <script>
-        const togglebtn = document.querySelector(".toggle_btn")
-        const togglebtnicon = document.querySelector(".toggle_btn")
-        const dropdownmenu = document.querySelector(".dropdown_menu")
-
-        togglebtn.onclick = function () {
-            dropdownmenu.classList.toggle("open")
-            const isopen = dropdownmenu.classList.contains("open")
-
-            togglebtnicon.classList = isopen
-                ? "fa-solid fa-xmark"
-                : "fa-solid fa-bars"
-        }
-    </script>
-    <main>
-        <section id="hero">
-            <h1>WELCOM TO THE SMART library</h1>
-            <p>Your way to a worled of knowledge</p>
-        </section>
-        <section id="search">
-            <input type="search" class="search">
-            <input type="submit" value="search" class="buttun">
-        </section>
-    </main>
-    <footer>
-        <p>&copy;2024 smart libarary .all right reserved to BATU</p>
-    </footer>
+  <header>
+    <img src="../../coding/image/ChatGPT Image Jul 16, 2025, 10_00_31 AM (1).png"style="width: 200px; height:70px;" alt="AWA Logo" height="40">
+    <nav>
+      <a href="index.html"><i class="fa-solid fa-house"></i> home</i></a>
+      <a href="#"><i class="fa-solid fa-address-card"></i> About</a>
+      <a href="#" class="circle"></a>
+      <a href="https://awafoodsolutions.com/shop/"><i class="fa-solid fa-cart-shopping"></i> shop</a>
+      <a href="#"><i class="fa-solid fa-phone-volume"></i> contact</a>
+    </nav>
+    <div >
+      <i class="fa-brands fa-searchengin fa-2xl" style="color:#b68303"></i>
+      <input type="search" class="search" >
+    </div>
+  </header>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Quality Food <br>Ingredients</h1>
+      <a href="https://awafoodsolutions.com/shop/"><button>Shop Now</button></a>
+      <button class="secondary">Get a Quote</button>
+    </div>
+    <img src="../../coding/image/MCT-oil-powder-web-pic-002.png" style="width: 600px ;" alt="Garlic Paste" >
+  </section>
+  <section>
+    <div class="awa">
+      <img src="../../coding/image/719d5a1de81493784120c2691cc5d4b5.png" alt="awa">
+      <pre>
+           When nature itself holds flavours so unique, why would one go in search of
+           the same elsewhere? Even if we did,what we wind up with is nothing close to 
+           what nature has in store. Characteristics so distinct that even a tiny drop
+           of it can do wonders. So we at AWA did the simple task of relying truly on 
+           nature. This merged with our advanced technology paved way to the end 
+           result,everything from A to Z, processed to perfection.
+      </pre>
+    </div>
+  </section>
+  <section class="categories">
+    <div class="category">
+      <img src="../../coding/image/logo100.png" style="position: absolute;top: 60px;; width:267px; height: 80px;" alt="sweet and slim">
+      <h2 class="word">sweet&slim</h2>
+      <a href="https://awafoodsolutions.com/shop/product-category/sweet-slim/"><button>Shop Now</button></a>
+    </div>
+    <div class="category">
+      <img src="../../coding/image/squeasy1-300x153.png" style="position: absolute; top:30px;" alt="squeasy">
+      <h2 class="word">squeasy</h2>
+      <a href="https://awafoodsolutions.com/shop/product-category/squeasy/"><button>Shop Now</button></a>
+    </div>
+    <div class="category">
+      <img src="../../coding/image/copy_635113057-300x292.png" style="position: absolute;top: -70px;" alt="ketolam">
+      <h2 class="word">ketolim</h2>
+      <a href="https://awafoodsolutions.com/shop/product-category/keto-slim/"><button>Shop Now</button></a>
+    </div>
+  </section>
+  <section class="products-2">
+    <h2 style="text-align:center; font-family: 'Montserrat', sans-serif;">why choose AWA ?</h2>
+    <div class="product-2-grid">
+      <div class="product-2">
+        <i class="fa-solid fa-star  fa-2xl"></i>
+        <h4>premium Quality</h4>
+        <div class="price-2">our Ingredients are of the highest quality.</div>
+      </div>
+      <div class="product-2">
+        <i class="fa-solid fa-truck  fa-2xl"></i>
+        <h4>Fast Delivery</h4>
+        <div class="price-2">Quick shipping to met your needs.</div>
+      </div>
+      <div class="product-2">
+        <i class="fa-solid fa-leaf  fa-2xl"></i>
+        <h4>Organic Certified</h4>
+        <div class="price-2">We ofter arrange of organic products.</div>
+      </div>
+      <div class="product-2">
+        <i class="fa-solid fa-check fa-2xl"></i>
+        <h4>Testimonnials</h4>
+        <div class="price-2">Great service and top noich inglnotelik wighly recommend awa.</div>
+      </div>
+    </div>
+  </section>
+  <div class="bord">High Quality and Amazing Taste.</div>
+  <footer>
+    <img src="../../coding/image/picture/HEJ-Coffee-Company.png" style="width:100%; height: 300px; filter:blur(10px);" alt="filter">
+    <br>
+     &copy; 2025 AWA Food Solutions. All rights reserved.
+  </footer>
 </body>
-
 </html>
